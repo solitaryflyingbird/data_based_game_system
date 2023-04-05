@@ -1,0 +1,25 @@
+{
+    "monster": "Zombie",
+    "attributes": {
+        "health": 500,
+        "attack": 50,
+        "defense": 30,
+        "speed": 20
+    },
+    "description": "A reanimated corpse with a hunger for human flesh.",
+    "loot": [
+        {
+            "item": "Rotten Flesh",
+            "chance": 0.9
+        },
+        {
+            "item": "Zombie Brain",
+            "chance": 0.5
+        },
+        {
+            "item": "Zombie Arm",
+            "chance": 0.1
+        }
+    ]
+ }
+ 
