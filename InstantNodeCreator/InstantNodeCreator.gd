@@ -12,6 +12,7 @@ func _create_nodes_from_folder(folder_path: String, parent_node: Node):
 	var stack = [{"path": folder_path, "parent": parent_node}]
 
 	while stack.size() > 0:
+		print(stack, "스")
 		var current = stack.pop_front()
 		var files_and_folders = get_all_files_and_folders(current["path"])
 

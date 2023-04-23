@@ -11,7 +11,6 @@ config_version=4
 [application]
 
 config/name="데이터 기반 게임 개괄"
-run/main_scene="res://test/main.tscn"
 
 [gui]
 
