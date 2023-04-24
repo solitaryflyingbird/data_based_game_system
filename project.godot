@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "data_node",
+"language": "GDScript",
+"path": "res://data_process/data_ndoe.gd"
+}, {
+"base": "Node",
+"class": "folder_node_class",
+"language": "GDScript",
+"path": "res://data_process/folder_node.gd"
+} ]
+_global_script_class_icons={
+"data_node": "",
+"folder_node_class": ""
+}
+
 [application]
 
 config/name="데이터 기반 게임 개괄"
