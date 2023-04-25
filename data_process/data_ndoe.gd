@@ -13,9 +13,11 @@ func _ready():
 
 func load_json_data():
 	var file = File.new()
+	var xxx= file.open(json_file_path, File.READ)
 	if file.open(json_file_path, File.READ) == OK:
 		var json_text = file.get_as_text()
 		json_data = parse_json(json_text)
+		print(json_data)
 	else:
 		print("Error opening JSON file: ", json_file_path)
 

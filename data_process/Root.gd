@@ -18,6 +18,7 @@ func _ready():
 
 	add_child_node(child3, "Child 3.1")
 	add_data_node(child3,"res://data/monster/dragon.json","dragon")
+
 func add_child_node(parent, child_name):
 	var child_node = folder_node_class.instance()
 	child_node.node_name = child_name
@@ -27,5 +28,6 @@ func add_child_node(parent, child_name):
 func add_data_node(parent, data_node_adress, data_name):
 	var child_data = data_node_class.instance()
 	child_data.data_name = data_name
+	child_data.json_file_path = data_node_adress
 	self.add_child(child_data)
 	parent.data_list.append(child_data)
